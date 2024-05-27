@@ -23,9 +23,10 @@ date();
 
 function day(){
     const currentDay = new Date();
-    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-    const displayDay = days[currentDay.getDay()];
-    return displayDay;
+    // const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    // const displayDay = days[currentDay.getDay()];
+    // return displayDay;
+    return currentDay.toLocaleDateString('en-US', {weekday: 'long'})
 }
 
 function displayDayName(){
